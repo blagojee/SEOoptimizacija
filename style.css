@@ -265,5 +265,55 @@ nav a:hover {
 	border-radius: 50%;
 
 }
-
+footer .social-buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px; /* Razmak između dugmadi */
+	margin-top: 15px;
+  }
+  
+  footer .social-buttons .fb-like,
+  footer .social-buttons .twitter-share-button {
+	display: inline-block;
+	vertical-align: middle;
+  }
+  
+  footer .social-buttons div,
+  footer .social-buttons a {
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 8px; /* Zaobljeni uglovi */
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  footer .social-buttons div:hover,
+  footer .social-buttons a:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  footer {
+	padding: 20px;
+	background: #3b5998; /* Facebook plava */
+	color: #fff;
+	text-align: center;
+	font-size: 0.9rem;
+  }
+  
+  footer .social-buttons a {
+	text-decoration: none;
+	color: #1da1f2; /* Twitter plava */
+	font-weight: bold;
+  }
+  
+  footer .social-buttons .fb-like {
+	width: auto;
+  }
+  
+  footer .social-buttons .twitter-share-button {
+	margin-left: 10px;
+  }
+  
 }
