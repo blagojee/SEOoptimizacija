@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: font1;
+    src: url(fonts/MountainsofChristmas-Regular.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(fonts/Lato-Regular.ttf);
+}
+
+h1, h2, nav a {
+	font-family: font1;
+}
+
+body {
+	font-family: font2;
+	font-size: 16px;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+
+	font-size: 48px;
+	font-weight: normal;
+}
+
+header, #baner, footer, #jedan, #dva, #tri {
+	overflow:auto;
+}
+
+header {
+	background-color: #145f4a; /*zelena*/
+    padding: 20px 0;
+	text-align: center;
+}
+
+#logo {
+	color: #d7d3c8; /*siva*/
+	font-size: 50px;
+	font-weight: normal;
+}
+
+/*NAVIGACIJA*/
+
+nav {
+	margin-top: 30px;
+}
+
+nav a {
+	display: block; /*mobile + tablet*/
+	color: #d99703; /*zuta*/
+	font-size: 24px;
+	text-transform: uppercase;
+	padding: 10px 0;
+}
+
+nav a:hover {
+	background-color: #d99703; /*zuta*/
+	color: white;
+
+}
+
+/*BANER*/
+
+#baner {
+	background: url(images/i1.jpg) no-repeat left top;
+	background-size: cover;
+	min-height: 500px;
+	text-align: center;
+	padding-top: 150px;
+	
+}
+
+#baner h2 {
+	color: #145f4a; /*zelena*/
+	font-size: 44px;
+}
+
+#jedan {
+	background-color: #d99703; /*zuta*/
+	color: white;
+}
+
+#jedan img {
+	border-radius: 50%;
+	border: 3px solid #ac7700;
+	margin-bottom: 20px;
+}
+
+#jedan h2 {
+	color: white;
+	margin: 80px 0 50px 0;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+#jedan h3 {
+	font-family: font1;
+	font-size: 24px;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+#jedan p {
+	font-size: 18px;
+    margin: 0 5%;
+    margin-bottom: 20px;
+}
+
+#jedan a {
+	color: white;
+	padding: 3px 10px 5px 10px;
+	border: 1px solid white;
+	border-radius: 20px;
+	font-size: 14px;
+}
+
+#jedan a:hover {
+	background-color: white;
+	color: #ac7700;
+	transition: 0.5s;
+}
+
+#jedan .clanak {
+	margin-bottom: 80px;
+}
+ 
+
+#jedan .clanci, #dva .radovi {
+	margin: 0 10%;
+}
+
+#dva {
+	background: url(images/i11.jpg);
+	background-size: 100%;
+}
+
+#dva h2 {
+	color: #145f4a; /*zelena*/
+	margin: 100px 0 50px 0;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+#dva img {
+	width: 100%;
+	padding: 2%;
+}
+
+#dva {
+	padding-bottom: 100px;
+}
+
+#tri {
+	background-color: #145f4a; /*zelena*/
+}
+
+#tri h2 {
+	color: #d7d3c8; /*siva*/
+	margin: 100px 0 50px 0;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+/*Forma*/
+
+form {
+    text-align: center;
+    border-radius: 5px;
+    color: #d7d3c8; /*siva*/
+    font-size: 26px;
+    font-family: font1;
+}
+
+label {
+	display: block;
+}
+
+input[type=text], select, textarea {
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #d7d3c8; /*siva*/
+    border-radius: 5px;
+    width: 80%;
+    font-size: 16px;
+    font-family: font2;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #145f4a; /*zelena*/
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #145f4a; /*zelena*/
+    color: #d7d3c8; /*siva*/
+    padding: 14px 20px;
+    margin: 20px 0 80px 0;
+    border: 1px solid #d7d3c8; /*siva*/
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+	border: 1px solid #d7d3c8; /*siva*/
+	color: #145f4a; /*zelena*/
+	width:80%;
+	transition:1s;
+}
+
+input[type=text]:focus, textarea:focus {
+    background-color: #d99703; /*zuta*/
+    color: white;
+    border: 1px solid #145f4a; /*zelena*/ 
+}
+
+footer {
+	background-color:#145f4a; /*zelena*/ 
+	border-top: 3px solid #d99703; /*zuta*/
+	padding: 20px 0;
+	color: #d99703; /*zuta*/
+	font-size: 16px;
+}
+
+/*sve*/
+.radovi div, .clanak {
+    float: left;
+}
+
+/*mobile*/
+.radovi div, .clanak {
+	width: 100%;}
+
+/*tablet */
+@media only screen and (min-width: 600px) {
+    .radovi div {width: 50%;}
+}
+
+/*laptop*/
+@media only screen and (min-width: 768px) {
+.radovi div, .clanak {
+	width: 33.33%;}
+
+nav a {
+	display: inline;
+	margin: 0 30px;
+	padding: 5px 20px;
+}
+
+nav a:hover {
+	background-color: transparent;
+	color: #d99703; /*zuta*/
+	border-bottom: 1px solid #d99703; /*zuta*/
+	border-radius: 50%;
+
+}
+
+}
